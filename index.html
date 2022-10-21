@@ -5,16 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<body class="">
+    <main class="container debug">
+        <section class="calcolatore">
+            <div class="input d-flex">
+                <form action="">
+                    <label class="d-block" for="name">Nome e Cognome</label>
+                    <input type="get" id="name" name="name">
+                </form>
+                <form action="">
+                    <label class="d-block" for="Km">Km da percorrere</label>
+                    <input type="text" id="Km" name="Km">
+                </form>
+                <form action="">
+                    <label class="d-block" for="age_range">Fascia d'età</label>
+                    <input type="text" id="age_range" name="age_range">
+                </form>
+            </div>
+            <div class="input-buttons">
+                <button id="genera" type="button">Genera</button>
+                <button id="annulla" type="button">Annulla</button>
+            </div>
+        </section>
 
-    <section class="price">
-        <h2>Il tuo biglietto costa:</h2>
-        <h2 id="realPrice"></h2>
-    </section>
+        <section class="biglietto">
 
-
-
+        </section>
+        <h1 id="gg"></h1>
+    </main>
 <script src="JS/main.js"></script>
 </body>
 </html>
