@@ -11,6 +11,7 @@
 
 body {
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 /* ==================
    ==================
@@ -55,9 +56,13 @@ body {
     background-color: lightgrey;
     color: crimson;
     padding: 10px;
-    margin: 0.625rem 0.3125rem 0.625rem 0.625rem;
+    margin: 0 0.3125rem;
 }
 
+.list {
+    padding: -0.625rem;
+
+}
 /* ==================
    ==================
         STYLE
@@ -84,7 +89,7 @@ body {
 .calcolatore {
     margin: 1.25rem;
     background-color: white;
-
+    padding: 1.25rem;
 }
 
 /* ===================
@@ -93,6 +98,15 @@ body {
 .calcolatore form {
     text-align: center;
     
+}
+
+.calcolatore label {
+    color: crimson;
+}
+
+.calcolatore p {
+    margin-bottom: 0.5625rem;
+    color: crimson;
 }
 
 .calcolatore input {
@@ -119,9 +133,12 @@ body {
     background-color: white;
 }
 
+.box {
+    padding: 1.25rem;
+}
 .biglietto .row {
-    border-top: 1px solid limegreen;
-    border-bottom: 1px solid limegreen;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .biglietto .col-nome {
@@ -136,10 +153,17 @@ body {
     width: calc(100% / 4);
     padding: 1.25rem;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 strong {
     font-size: 1.25rem;
     font-weight: 900;
 }
 
+#user {
+    margin-top: 20px;
+}

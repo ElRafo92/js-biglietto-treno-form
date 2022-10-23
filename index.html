@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <!-- google font -->
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -20,40 +25,46 @@
                     <label class="d-block" for="km">Km da percorrere</label>
                     <input type="text" id="km" value="">
                 </form>
-                <select name="age-range" id="age-range" class="list">
-                    <option value="minorenne" id="minorenne">Minorenne</option>
-                    <option value="maggiorenne">Maggiorenne</option>
-                    <option value="anziano" class="anziano">Anziano</option>
-                </select>
+                <div>
+                    <p>Fascia d'età</p>
+                    <select name="age-range" id="age-range" class="list">
+                        <option value="Minorenne" id="minorenne">Minorenne</option>
+                        <option value="Maggiorenne">Maggiorenne</option>
+                        <option value="Anziano" class="anziano">Anziano</option>
+                    </select>
+                </div>
             </div>
             <div class="input-buttons">
-                <button id="genera" class="btn" type="button">Genera</button>
-                <button id="annulla" class="btn" type="button">Annulla</button>
+                <button id="genera" class="btn" type="button"><strong>GENERA</strong></button>
+                <button id="annulla" class="btn" type="button"><strong>ANNULLA</strong></button>
             </div>
         </section>
 
         <h1 class="title">IL TUO BIGLIETTO</h1>
         <section class="biglietto">
-            <div class="row">
-                <div class="col-nome">
-                    <strong>NOME PASSEGGERO</strong>
-                    <h2 id="user"></h2>
-                </div>
-                <div class="col-info">
-                    <strong>Offerta</strong>
-                    <p id="offerta"></p>
-                </div>
-                <div class="col-info">
-                    <strong>Carrozza</strong>
-                    <p id="carrozza"></p>
-                </div>
-                <div class="col-info">
-                    <strong>Codice Cp</strong>
-                    <p id="randomCp"></p>
-                </div>
-                <div class="col-info">
-                    <strong>Costo biglietto</strong>
-                    <p id="costo"></p>
+            <div class="box">
+                <strong>DETTAGLIO PASSEGGERO</strong>
+                <div class="row">
+                    <div class="col-nome">
+                        <strong>NOME PASSEGGERO</strong>
+                        <h2 id="user"></h2>
+                    </div>
+                    <div class="col-info">
+                        <strong>Offerta</strong>
+                        <p id="offerta"></p>
+                    </div>
+                    <div class="col-info">
+                        <strong>Carrozza</strong>
+                        <p id="carrozza"></p>
+                    </div>
+                    <div class="col-info">
+                        <strong>Codice Cp</strong>
+                        <p id="randomCp"></p>
+                    </div>
+                    <div class="col-info">
+                        <strong>Costo biglietto</strong>
+                        <p id="costo"></p>
+                    </div>
                 </div>
             </div>
         </section>

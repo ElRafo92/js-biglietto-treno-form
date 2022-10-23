@@ -23,12 +23,12 @@ genera.addEventListener(`click`, function() {
    let price = kilometri * 0.21;
    let finalPrice;
 
-   if (age == `minorenne`) { 
+   if (age == `Minorenne`) { 
     finalPrice = price - (price * 0.2);
     fixedPrice = finalPrice.toFixed(2);
     document.getElementById(`costo`).innerHTML = `${fixedPrice} €`;
    }
-   else if (age == `anziano`) {
+   else if (age == `Anziano`) {
     finalPrice = price - (price * 0.4);
     fixedPrice = finalPrice.toFixed(2);
     document.getElementById(`costo`).innerHTML = `${fixedPrice} €`;
