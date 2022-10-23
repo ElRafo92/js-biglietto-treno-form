@@ -1,10 +1,10 @@
 const genera = document.getElementById(`genera`);
+const annulla = document.getElementById(`annulla`);
+const biglietto = document.querySelector(`.biglietto`);
 let randomCp = document.getElementById(`randomCp`);
 let carrozza = document.getElementById(`carrozza`);
 
 genera.addEventListener(`click`, function() {
-   const 
-
    randomCp = Math.floor(Math.random() * 9999) + 10000;
    document.getElementById(`randomCp`).innerHTML = randomCp;
    console.log(randomCp);
@@ -19,22 +19,29 @@ genera.addEventListener(`click`, function() {
    let age = document.querySelector(`.list`).value;
    document.getElementById(`offerta`).innerHTML = age;
 
-   let kilometri = document.getElementById(`km`).value;
+   let kilometri = Number(document.getElementById(`km`).value);
    let price = kilometri * 0.21;
    let finalPrice;
 
    if (age == `minorenne`) { 
     finalPrice = price - (price * 0.2);
     fixedPrice = finalPrice.toFixed(2);
-    document.getElementById(`costo`).innerHTML = fixedPrice;
+    document.getElementById(`costo`).innerHTML = `${fixedPrice} €`;
    }
    else if (age == `anziano`) {
     finalPrice = price - (price * 0.4);
     fixedPrice = finalPrice.toFixed(2);
-    document.getElementById(`costo`).innerHTML = fixedPrice;
+    document.getElementById(`costo`).innerHTML = `${fixedPrice} €`;
    }
    else {
     finalPrice = price;
-    document.getElementById(`costo`).innerHTML = finalPrice;
+    fixedPrice = finalPrice.toFixed(2)
+    document.getElementById(`costo`).innerHTML = `${fixedPrice} €`;
    }
+
+   biglietto.classList.add(`ticket-display`);
+});
+
+annulla.addEventListener(`click`, function() {
+   biglietto.classList.remove(`ticket-display`);
 });

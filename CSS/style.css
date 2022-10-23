@@ -40,6 +40,24 @@ body {
     display: flex;
 }
 
+.title {
+    color: white;
+    text-align: center;
+    font-weight: 800;
+}
+
+.btn {
+    border-radius: 0.3125rem;
+    border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: auto;
+    background-color: lightgrey;
+    color: crimson;
+    padding: 10px;
+    margin: 0.625rem 0.3125rem 0.625rem 0.625rem;
+}
+
 /* ==================
    ==================
         STYLE
@@ -49,6 +67,24 @@ body {
     max-width: 62.5rem;
     margin: auto;
     padding: 1.875rem;
+    background-color: crimson;
+}
+
+.biglietto {
+    display: none;
+}
+
+.ticket-display {
+    display: block; 
+}
+
+/* ===================
+       CALCOLATORE 
+   =================== */
+.calcolatore {
+    margin: 1.25rem;
+    background-color: white;
+
 }
 
 /* ===================
@@ -64,7 +100,7 @@ body {
 }
 
 .calcolatore .input {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* ===========================
@@ -80,6 +116,7 @@ body {
    ====================== */
 .biglietto {
     margin: 1.25rem;
+    background-color: white;
 }
 
 .biglietto .row {
@@ -90,12 +127,19 @@ body {
 .biglietto .col-nome {
     background-color: grey;
     width: 40%;
-    height: 12.5rem;
-    padding: 0.625rem;
+    height: 9.375rem;
+    padding: 1.25rem;
 }
 
 .biglietto .col-info {
     padding: 0.625rem;
     width: calc(100% / 4);
+    padding: 1.25rem;
+
+}
+
+strong {
+    font-size: 1.25rem;
+    font-weight: 900;
 }
 
