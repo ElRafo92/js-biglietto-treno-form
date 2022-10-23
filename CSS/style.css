@@ -8,6 +8,10 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-size: 1rem;
+}
 /* ==================
    ==================
         DEBUG
@@ -32,13 +36,17 @@
     display: flex;
 }
 
+.row {
+    display: flex;
+}
+
 /* ==================
    ==================
         STYLE
    ==================
    ================== */
 .container {
-    max-width: 43.75rem;
+    max-width: 62.5rem;
     margin: auto;
     padding: 1.875rem;
 }
@@ -65,5 +73,29 @@
 .calcolatore .input-buttons {
     text-align: center;
     margin-top: 1.875rem;
+}
+
+/* ======================
+        BIGLIETTO
+   ====================== */
+.biglietto {
+    margin: 1.25rem;
+}
+
+.biglietto .row {
+    border-top: 1px solid limegreen;
+    border-bottom: 1px solid limegreen;
+}
+
+.biglietto .col-nome {
+    background-color: grey;
+    width: 40%;
+    height: 12.5rem;
+    padding: 0.625rem;
+}
+
+.biglietto .col-info {
+    padding: 0.625rem;
+    width: calc(100% / 4);
 }
 

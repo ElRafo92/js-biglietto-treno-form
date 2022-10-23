@@ -1,32 +1,40 @@
-// richiesta età e kilometri da percorrere
-// const age = Number (prompt('Please insert your age:'));
-// console.log (age)
+const genera = document.getElementById(`genera`);
+let randomCp = document.getElementById(`randomCp`);
+let carrozza = document.getElementById(`carrozza`);
 
-// const Km = Number (prompt('Please insert the Km of your travel:'));
-// console.log (Km)
+genera.addEventListener(`click`, function() {
+   const 
 
-// const price = (Km * 0.21);
-// console.log (price)
+   randomCp = Math.floor(Math.random() * 9999) + 10000;
+   document.getElementById(`randomCp`).innerHTML = randomCp;
+   console.log(randomCp);
+    
+   carrozza = Math.floor(Math.random() * 17) + 1;
+   document.getElementById(`carrozza`).innerHTML = carrozza;
+   console.log(carrozza);
 
-// let realPrice;
-// let fixedNum;
-// if (age < 18) {
-//     realPrice = (price - (price * 0.2));
-//     fixedNum = realPrice.toFixed(2);
-//     console.log (fixedNum);
-//     document.getElementById ('realPrice').innerHTML = `${fixedNum} $`;
-// } else if (age >= 65){
-//     realPrice = (price - (price * 0.4));
-//     fixedNum = realPrice.toFixed(2);
-//     console.log (fixedNum);
-//     document.getElementById ('realPrice').innerHTML = `${fixedNum} $`;
-// } 
-// else {
-//     const fixedPrice = price.toFixed(2);
-//     console.log (fixedPrice);
-//     document.getElementById ('realPrice').innerHTML = `${fixedPrice} $`; 
-// }
+   let nome = document.getElementById(`name`).value;
+   document.getElementById(`user`).innerHTML = nome;
 
-const element = document.getElementById (`name`);
-console.log (element);
-document.getElementById ('gg').innerHTML = (element)
+   let age = document.querySelector(`.list`).value;
+   document.getElementById(`offerta`).innerHTML = age;
+
+   let kilometri = document.getElementById(`km`).value;
+   let price = kilometri * 0.21;
+   let finalPrice;
+
+   if (age == `minorenne`) { 
+    finalPrice = price - (price * 0.2);
+    fixedPrice = finalPrice.toFixed(2);
+    document.getElementById(`costo`).innerHTML = fixedPrice;
+   }
+   else if (age == `anziano`) {
+    finalPrice = price - (price * 0.4);
+    fixedPrice = finalPrice.toFixed(2);
+    document.getElementById(`costo`).innerHTML = fixedPrice;
+   }
+   else {
+    finalPrice = price;
+    document.getElementById(`costo`).innerHTML = finalPrice;
+   }
+});

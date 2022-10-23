@@ -13,16 +13,17 @@
             <div class="input d-flex">
                 <form action="">
                     <label class="d-block" for="name">Nome e Cognome</label>
-                    <input type="get" id="name" name="name">
+                    <input type="text" id="name">
                 </form>
                 <form action="">
-                    <label class="d-block" for="Km">Km da percorrere</label>
-                    <input type="text" id="Km" name="Km">
+                    <label class="d-block" for="km">Km da percorrere</label>
+                    <input type="text" id="km" value="">
                 </form>
-                <form action="">
-                    <label class="d-block" for="age_range">Fascia d'età</label>
-                    <input type="text" id="age_range" name="age_range">
-                </form>
+                <select name="age-range" id="age-range" class="list">
+                    <option value="minorenne" id="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="anziano" class="anziano">Anziano</option>
+                </select>
             </div>
             <div class="input-buttons">
                 <button id="genera" type="button">Genera</button>
@@ -31,9 +32,32 @@
         </section>
 
         <section class="biglietto">
-
+            <h1>Dettaglio passeggero</h1>
+            <div class="row">
+                <div class="col-nome">
+                    <h1>Nome passeggero</h1>
+                    <h2 id="user"></h2>
+                </div>
+                <div class="col-info">
+                    <h2>Offerta</h2>
+                    <p id="offerta"></p>
+                </div>
+                <div class="col-info">
+                    <h2>Carrozza</h2>
+                    <p id="carrozza"></p>
+                </div>
+                <div class="col-info">
+                    <h2>Codice Cp</h2>
+                    <p id="randomCp"></p>
+                </div>
+                <div class="col-info">
+                    <h2>Costo biglietto</h2>
+                    <p id="costo"></p>
+                    <p id="costo2"></p>
+                </div>
+            </div>
         </section>
-        <h1 id="gg"></h1>
+        
     </main>
 <script src="JS/main.js"></script>
 </body>
